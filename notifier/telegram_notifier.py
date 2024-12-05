@@ -12,8 +12,6 @@ class TelegramNotifier:
         self.bot_token = bot_token
         self.chat_id = chat_id
 
-        print(self.bot_token, self.chat_id)
-
     def send_message(self, message: str):
         """
         Send a message to the specified Telegram chat.
