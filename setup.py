@@ -9,7 +9,7 @@ setup(
     description="A library for sending Telegram notifications",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/rodrigozs/notifyme",
+    url="https://github.com/rodrigozs/NotifyMe",
     packages=find_packages(),
     install_requires=[
         "python-dotenv",
