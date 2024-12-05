@@ -1,20 +1,16 @@
 import requests
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
 
 
 class TelegramNotifier:
-    def __init__(self):
+    def __init__(self, bot_token, chat_id):
         """
         Initialize the TelegramNotifier with bot token and chat ID.
 
         :param bot_token: The token for your Telegram bot.
         :param chat_id: Your chat ID.
         """
-        self.bot_token = os.getenv("BOT_TOKEN")
-        self.chat_id = os.getenv("CHAT_ID")
+        self.bot_token = bot_token
+        self.chat_id = chat_id
 
         print(self.bot_token, self.chat_id)
 
