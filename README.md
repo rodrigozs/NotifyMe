@@ -9,13 +9,17 @@ This is useful when you let a script running and want to receive a notification 
 Use `BotFather` to create a new bot. Start a conversation and follow instructions.
 Here you will get your bot_token.
 
-To get your `chat_id`, go to the following link in your browser using your bot_token
+## To obtain a Chat ID
+You can create a chat with your bot or create a group with your bot in it.
+To get your `chat_id`, open the mentioned chat and send a text mentioning your bot with `@`.
+
+Then, go to the following link in your browser using your bot_token
 
 ```
-https://api.telegram.org/{bot_token}/getUpdates
+https://api.telegram.org/bot{bot_token}/getUpdates
 ```
 
-You will get your chat id from something like this:
+You will see the message you just sent associate to the chat ID. It would look something like this:
 
 ```
 {
